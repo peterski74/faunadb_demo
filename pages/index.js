@@ -22,7 +22,7 @@ export default () => {
       <div className="container-scroll">
         <div className="container">
           <h2>Customer Data</h2>
-          <div className="table">
+          <div className="table">qwe
             <h4>name</h4>
             <h4 className="telephone">telephone</h4>
             <h4 className="credit-card">credit card</h4>
