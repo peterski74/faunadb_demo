@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react'
-import Head from 'next/head'
-import TableRow from '../components/TableRow'
+import { useEffect, useState } from "react";
+import Head from "next/head";
+import TableRow from "../components/TableRow";
 
 export default () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
   useEffect(() => {
     async function getData() {
-      const res = await fetch('/api')
-      const newData = await res.json()
-      setData(newData)
+      const res = await fetch("/api");
+      const newData = await res.json();
+      setData(newData);
     }
-    getData()
-  }, [])
+    getData();
+  }, []);
   return (
     <main>
       <Head>
@@ -22,7 +22,7 @@ export default () => {
       <div className="container-scroll">
         <div className="container">
           <h2>Customer Data</h2>
-          <div className="table">qwe
+          <div className="table">
             <h4>name</h4>
             <h4 className="telephone">telephone</h4>
             <h4 className="credit-card">credit card</h4>
@@ -47,5 +47,5 @@ export default () => {
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
